@@ -12,10 +12,10 @@
     {
       "identity" : "swift-math-parser",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/alldritt/swift-math-parser.git",
+      "location" : "https://github.com/bradhowes/swift-math-parser.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "f193209976adc594276a51bd9ecca772b853929e"
+        "revision" : "1f42dac04e7dd9782c193c5f6e30ec92088f1aa3",
+        "version" : "3.4.0"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
       "state" : {
-        "revision" : "ab8c9f45843694dd16be4297e6d44c0634fd9913",
-        "version" : "0.8.4"
+        "revision" : "4af50b38daf0037cfbab15514a241224c3f62f98",
+        "version" : "0.8.5"
       }
     }
   ],

@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50E96DF29FE2BA900E285D3 /* MathParser in Frameworks */ = {isa = PBXBuildFile; productRef = A50E96DE29FE2BA900E285D3 /* MathParser */; };
 		A5AB156529EF141A00E30DC7 /* MathParserTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB156429EF141A00E30DC7 /* MathParserTestApp.swift */; };
 		A5AB156729EF141A00E30DC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB156629EF141A00E30DC7 /* ContentView.swift */; };
 		A5AB156929EF141C00E30DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AB156829EF141C00E30DC7 /* Assets.xcassets */; };
 		A5AB156D29EF141C00E30DC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AB156C29EF141C00E30DC7 /* Preview Assets.xcassets */; };
-		A5AB157D29EF192800E30DC7 /* MathParser in Frameworks */ = {isa = PBXBuildFile; productRef = A5AB157C29EF192800E30DC7 /* MathParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5AB157D29EF192800E30DC7 /* MathParser in Frameworks */,
+				A50E96DF29FE2BA900E285D3 /* MathParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +96,7 @@
 			);
 			name = MathParserTest;
 			packageProductDependencies = (
-				A5AB157C29EF192800E30DC7 /* MathParser */,
+				A50E96DE29FE2BA900E285D3 /* MathParser */,
 			);
 			productName = MathParserTest;
 			productReference = A5AB156129EF141A00E30DC7 /* MathParserTest.app */;
@@ -127,7 +127,7 @@
 			);
 			mainGroup = A5AB155829EF141A00E30DC7;
 			packageReferences = (
-				A5AB157B29EF192800E30DC7 /* XCRemoteSwiftPackageReference "swift-math-parser" */,
+				A50E96DD29FE2BA900E285D3 /* XCRemoteSwiftPackageReference "swift-math-parser" */,
 			);
 			productRefGroup = A5AB156229EF141A00E30DC7 /* Products */;
 			projectDirPath = "";
@@ -372,20 +372,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A5AB157B29EF192800E30DC7 /* XCRemoteSwiftPackageReference "swift-math-parser" */ = {
+		A50E96DD29FE2BA900E285D3 /* XCRemoteSwiftPackageReference "swift-math-parser" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/alldritt/swift-math-parser.git";
+			repositoryURL = "https://github.com/bradhowes/swift-math-parser.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A5AB157C29EF192800E30DC7 /* MathParser */ = {
+		A50E96DE29FE2BA900E285D3 /* MathParser */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A5AB157B29EF192800E30DC7 /* XCRemoteSwiftPackageReference "swift-math-parser" */;
+			package = A50E96DD29FE2BA900E285D3 /* XCRemoteSwiftPackageReference "swift-math-parser" */;
 			productName = MathParser;
 		};
 /* End XCSwiftPackageProductDependency section */

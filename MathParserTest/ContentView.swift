@@ -70,7 +70,8 @@ struct ContentView: View {
         let parser = MathParser(variables: variableProvider,
                                 enableImpliedMultiplication: impliedMultiplication)
         
-        if let evaluator = parser.parse(expression) {
+        switch parser.parseResult(expression) {
+        case .success(let evaluator):
             let result = evaluator.value
             
             if result.isNaN { // An expression identifer is undefined
@@ -83,10 +84,10 @@ struct ContentView: View {
             else {
                 return String(evaluator.eval())
             }
-        }
-        else { // syntax error
-            //  TODO: find a means of reporting symtax error location
-            return "parse failed"
+
+        case .failure(let error):
+            return error.description
+
         }
     }
     
